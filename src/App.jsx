@@ -3,6 +3,42 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Heart } from 'lucide-react';
 import { quotes } from './quotes';
 
+const TopDecorations = () => {
+  const decorations = [
+    { emoji: '💖', left: '5%', top: '5%', size: '1.2rem', delay: 0 },
+    { emoji: '✨', left: '15%', top: '12%', size: '0.8rem', delay: 1 },
+    { emoji: '💗', left: '25%', top: '8%', size: '1rem', delay: 2 },
+    { emoji: '🌸', left: '35%', top: '15%', size: '1.1rem', delay: 0.5 },
+    { emoji: '💕', left: '45%', top: '6%', size: '0.9rem', delay: 1.5 },
+    { emoji: '✨', left: '55%', top: '10%', size: '1rem', delay: 2.5 },
+    { emoji: '💖', left: '65%', top: '18%', size: '0.8rem', delay: 0.8 },
+    { emoji: '💗', left: '75%', top: '10%', size: '1.2rem', delay: 1.2 },
+    { emoji: '✨', left: '85%', top: '12%', size: '0.9rem', delay: 1.8 },
+    { emoji: '🌸', left: '95%', top: '5%', size: '1.1rem', delay: 0.3 },
+  ];
+
+  return (
+    <div className="absolute top-0 left-0 w-full h-48 pointer-events-none overflow-hidden opacity-25">
+      {decorations.map((dec, i) => (
+        <motion.div
+          key={i}
+          animate={{ y: [0, 8, 0], x: [0, 2, 0] }}
+          transition={{
+            duration: 5 + Math.random() * 2,
+            repeat: Infinity,
+            delay: dec.delay,
+            ease: "easeInOut"
+          }}
+          className="absolute"
+          style={{ left: dec.left, top: dec.top, fontSize: dec.size }}
+        >
+          {dec.emoji}
+        </motion.div>
+      ))}
+    </div>
+  );
+};
+
 const HeartIcon = ({ style, emoji, delay }) => (
   <motion.div
     initial={{ y: 0, opacity: 0, scale: 0.5 }}
@@ -53,11 +89,7 @@ function App() {
       <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-blush rounded-full blur-3xl opacity-50" />
       <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-pastel-pink rounded-full blur-3xl opacity-50" />
 
-      {/* Additional Subtle Decorations */}
-      <div className="absolute top-[20%] left-[15%] text-pink-200/40 text-4xl pointer-events-none select-none">💖</div>
-      <div className="absolute top-[60%] right-[10%] text-pink-200/40 text-3xl pointer-events-none select-none">✨</div>
-      <div className="absolute bottom-[20%] left-[10%] text-pink-200/40 text-2xl pointer-events-none select-none">💗</div>
-      <div className="absolute top-[15%] right-[20%] text-pink-200/40 text-2xl pointer-events-none select-none">✨</div>
+      <TopDecorations />
 
       {/* Corner Decorations */}
       <div className="absolute top-8 left-8 text-2xl md:text-3xl opacity-70 pointer-events-none select-none">🌸</div>
@@ -81,13 +113,13 @@ function App() {
       </div>
 
       {/* Main Container */}
-      <main className="z-10 w-full max-w-2xl flex flex-col items-center gap-6 md:gap-8 text-center mt-12 mb-8">
+      <main className="z-10 w-full max-w-2xl flex flex-col items-center gap-6 md:gap-8 text-center mt-20 mb-8">
         {/* Header Section */}
-        <header className="flex flex-col gap-2 md:gap-4 mb-2">
+        <header className="flex flex-col gap-1 md:gap-2 mb-2">
           <p className="text-soft-rose font-serif uppercase tracking-[0.3em] text-xs md:text-sm">
             Happy Valentine's Day
           </p>
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-serif text-[#3D2B2B] leading-tight">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-serif font-bold text-[#740505] leading-tight">
             Love Yourself First
           </h1>
           <p className="text-soft-rose font-body text-base md:text-lg lg:text-xl">
@@ -123,7 +155,7 @@ function App() {
           whileTap={{ scale: 0.98 }}
           transition={{ type: "spring", stiffness: 400, damping: 17 }}
           onClick={getNewQuote}
-          className="group relative bg-soft-rose hover:bg-deep-rose text-white px-10 py-4 rounded-full text-xl font-serif shadow-button transition-colors duration-500 flex items-center gap-2 overflow-hidden"
+          className="group relative bg-deep-rose hover:opacity-90 text-white px-10 py-4 rounded-full text-xl font-serif shadow-button transition-all duration-500 flex items-center gap-2 overflow-hidden"
         >
           <motion.span
             initial={{ opacity: 0 }}
