@@ -115,11 +115,11 @@ function App() {
       {/* Main Container */}
       <main className="z-10 w-full max-w-2xl flex flex-col items-center gap-6 md:gap-8 text-center mt-20 mb-8">
         {/* Header Section */}
-        <header className="flex flex-col gap-2 md:gap-4 mb-2">
+        <header className="flex flex-col gap-1 md:gap-2 mb-2">
           <p className="text-soft-rose font-serif uppercase tracking-[0.3em] text-xs md:text-sm">
             Happy Valentine's Day
           </p>
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-serif font-bold text-soft-rose leading-tight">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-serif font-bold text-[#740505] leading-tight">
             Love Yourself First
           </h1>
           <p className="text-soft-rose font-body text-base md:text-lg lg:text-xl">
