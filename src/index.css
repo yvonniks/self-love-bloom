@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", serif;
+  --font-body: "Lora", serif;
+  --color-cream: #FFFDF9;
+  --color-blush: #FCE4EC;
+  --color-pastel-pink: #F8BBD0;
+  --color-deep-rose: #C2185B;
+  --color-soft-rose: #F06292;
+}
+
+@layer base {
+  body {
+    @apply bg-cream text-gray-800 font-body;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}

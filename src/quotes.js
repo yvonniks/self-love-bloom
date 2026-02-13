@@ -1,0 +1,22 @@
+export const quotes = [
+  "You are your own longest commitment. Treat yourself like a priority.",
+  "To love oneself is the beginning of a lifelong romance. — Oscar Wilde",
+  "You are allowed to be both a masterpiece and a work in progress, simultaneously.",
+  "Your soul will never be satisfied by the approval of others. Feed it your own instead.",
+  "The way you treat yourself sets the standard for others.",
+  "You are not a backup plan. You are the main event.",
+  "Be the love you never received.",
+  "Self-love is the fuel that allows you to shine bright for the rest of the world.",
+  "You don’t need to 'earn' rest or kindness. They are your birthright.",
+  "Fall in love with the process of becoming the best version of yourself.",
+  "Your worth is not a decimal point; it is a whole number that never changes.",
+  "Talk to yourself like you would to someone you love. — Brené Brown",
+  "Inner peace begins the moment you choose not to allow another person or event to control your emotions.",
+  "You are enough. Not because of what you do, but because of who you are.",
+  "Choose yourself, even when others don't.",
+  "Self-care is not selfish; it is self-preservation. — Audre Lorde",
+  "The most powerful relationship you will ever have is the one with yourself.",
+  "You are deserving of the same grace you so freely give to others.",
+  "Confidence is not 'they will like me.' Confidence is 'I’ll be fine if they don't.'",
+  "Flowers don’t compete with the flower next to them; they just bloom. You should too."
+];
