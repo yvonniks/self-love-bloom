@@ -119,7 +119,7 @@ function App() {
           <p className="text-soft-rose font-serif uppercase tracking-[0.3em] text-xs md:text-sm">
             Happy Valentine's Day
           </p>
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-serif font-bold text-[#3D2B2B] leading-tight">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-serif font-bold text-soft-rose leading-tight">
             Love Yourself First
           </h1>
           <p className="text-soft-rose font-body text-base md:text-lg lg:text-xl">
@@ -155,7 +155,7 @@ function App() {
           whileTap={{ scale: 0.98 }}
           transition={{ type: "spring", stiffness: 400, damping: 17 }}
           onClick={getNewQuote}
-          className="group relative bg-soft-rose hover:bg-deep-rose text-white px-10 py-4 rounded-full text-xl font-serif shadow-button transition-colors duration-500 flex items-center gap-2 overflow-hidden"
+          className="group relative bg-deep-rose hover:opacity-90 text-white px-10 py-4 rounded-full text-xl font-serif shadow-button transition-all duration-500 flex items-center gap-2 overflow-hidden"
         >
           <motion.span
             initial={{ opacity: 0 }}
