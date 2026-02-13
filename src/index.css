@@ -6,10 +6,10 @@
   --color-cream: #FFFDF9;
   --color-blush: #FCE4EC;
   --color-pastel-pink: #F8BBD0;
-  --color-deep-rose: #C2185B;
-  --color-soft-rose: #F06292;
-  --shadow-soft: 0 20px 50px rgba(240, 98, 146, 0.15);
-  --shadow-button: 0 10px 25px rgba(194, 24, 91, 0.3);
+  --color-deep-rose: #FF4D6D;
+  --color-soft-rose: #FF85A1;
+  --shadow-soft: 0 20px 50px rgba(255, 133, 161, 0.15);
+  --shadow-button: 0 10px 25px rgba(255, 77, 109, 0.3);
 }
 
 @layer base {
